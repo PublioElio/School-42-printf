@@ -31,17 +31,17 @@ This project consists in duplicate the behavior of the C function `printf()`. It
 You will find more details in the [subject of the project](https://github.com/PublioElio/School-42-printf/blob/main/printf.es.subject.pdf).
 
 ## Index
-- Structure
-- Formats
-- Auxiliary functions
+- [Structure](###structure)
+- [Formats](###formats)
+- [Auxiliary functions](###auxiliary-functions)
 
 ### Structure
 The main obstacles during the execution of the project have been: handling a variable number of parameters and the function `ft_printf()` returning an `int`.
 
 #### `va_list`
-To deal with the variable number of parameters entered, the macros `va_list`, `va_start`, `va_arg` and `va_end` have been used. The `ft_printf()` function calls the `ft_fotmat()` function when it finds the `%` sign among the entered parameters, then it checks the next character in the string to call one of the functions that print the different variable types.
+To deal with the variable number of parameters entered, the macros `va_list`, `va_start`, `va_arg` and `va_end` have been used. The `ft_printf()` function calls the `ft_fotmat()` function when it finds the `%` sign among the entered parameters, then it checks the next character in the string to call one of the functions that print the different variable types. To use this macro, the libraryt `<stdarg.h>` is included in the `ft_printf.h`.
 
-#### returning an integer
+#### Returning an integer
 To handle the integer returned by `ft_printf()`, a pointer is given in the format printing functions. In this way, the function handles the number of characters printed before continuing with the string sent by parameter. Example:
 
 ```
@@ -51,6 +51,5 @@ void	ft_putchar_pf(char c, size_t *counter)
 	(*counter)++; // increasing the pointer with each character printed
 }
 ```
-
 ### Formats
 ### Auxiliary functions
