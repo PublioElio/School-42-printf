@@ -31,9 +31,11 @@ This project consists in duplicate the behavior of the C function `printf()`. It
 You will find more details in the [subject of the project](https://github.com/PublioElio/School-42-printf/blob/main/printf.es.subject.pdf).
 
 ## Index
-- [Structure](###structure)
-- [Formats](###formats)
-- [Auxiliary functions](###auxiliary-functions)
+- [Structure](#structure)
+- [Formats](#formats)
+	-[va_list](#va-list)
+	-[Returning an integer](#returning-an-integer)
+- [Auxiliary functions](#auxiliary-functions)
 
 ### Structure
 The main obstacles during the execution of the project have been: handling a variable number of parameters and the function `ft_printf()` returning an `int`.
