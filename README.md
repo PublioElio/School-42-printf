@@ -19,7 +19,7 @@ This repository contains all files for the __printf__ project from School 42 Má
 </h2>
 
 ## About
-This project consists in duplicate the behavior of the C function `printf()`. It must handle the following parameters:
+This project consists in duplicate the behavior of the C function `printf()`. It is not necessary to implement the buffer management of the original function. It must handle the following parameters:
 
 - `char` type variables.
 - `string` type variables.
@@ -28,4 +28,29 @@ This project consists in duplicate the behavior of the C function `printf()`. It
 - hexadecimal `int` type variables (uppercase and lowercase).
 - `pointer` type variables.
 
-You will find more details in the subject of the project.
+You will find more details in the [subject of the project](https://github.com/PublioElio/School-42-printf/blob/main/printf.es.subject.pdf).
+
+## Index
+- Structure
+- Formats
+- Auxiliary functions
+
+### Structure
+The main obstacles during the execution of the project have been: handling a variable number of parameters and the function `ft_printf()` returning an `int`.
+
+#### `va_list`
+To deal with the variable number of parameters entered, the macros `va_list`, `va_start`, `va_arg` and `va_end` have been used. The `ft_printf()` function calls the `ft_fotmat()` function when it finds the `%` sign among the entered parameters, then it checks the next character in the string to call one of the functions that print the different variable types.
+
+#### returning an integer
+To handle the integer returned by `ft_printf()`, a pointer is given in the format printing functions. In this way, the function handles the number of characters printed before continuing with the string sent by parameter. Example:
+
+```
+void	ft_putchar_pf(char c, size_t *counter)
+{
+	write(1, &c, 1);
+	(*counter)++; // increasing the pointer with each character printed
+}
+```
+
+### Formats
+### Auxiliary functions
