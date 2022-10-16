@@ -33,8 +33,8 @@ You will find more details in the [subject of the project](https://github.com/Pu
 ## Index
 - [Structure](#structure)
 - [Formats](#formats)
-	-[va_list](#va-list)
-	-[Returning an integer](#returning-an-integer)
+	- [va_list](#va_list)
+	- [Returning an integer](#returning-an-integer)
 - [Auxiliary functions](#auxiliary-functions)
 
 ### Structure
