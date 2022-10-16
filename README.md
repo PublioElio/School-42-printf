@@ -54,4 +54,7 @@ void	ft_putchar_pf(char c, size_t *counter)
 }
 ```
 ### Formats
+The different types of variables are printed using a function for each of the formats:
+
+[__`ft_putchar_pf()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_putchar_pf.c) prints `char` type variables and is called by each of the following functions to print the character strings one by one. Also, it is where the pointer returned by the `ft_printf()` function is incremented.
 ### Auxiliary functions
