@@ -62,7 +62,36 @@ The different types of variables are printed using a function for each of the fo
 * [__`ft_putptr_pf()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_putptr_pf.c) prints a pointer, in hexadecimal format (lowercase), preceded by the string "0x".
 * [__`ft_putstr_pf()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_putstr_pf.c) prints a `char *` type variable, calling `ft_putchar_pf()` in a `while` loop. It the string is `NULL`, it returns `"(null)"`.
 * [__`ft_putuint_pf()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_putuint_pf.c) prints an `unsigned int` type variable.
-* [__`ft_aux_pf.c()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_aux_pf.c) this file contains all the auxiliary functions, specifically the `ft_atoi_base` function, [made during the August pool](https://github.com/PublioElio/School42-Piscina-agosto-2022). This function will be used mainly to change the base in functions that handle hexadecimal numbers and `unsigned int` type variables.
 
 ### Auxiliary functions
+[__`ft_aux_pf.c()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_aux_pf.c) this file contains all the auxiliary functions, specifically the `ft_atoi_base` function, [made during the August pool](https://github.com/PublioElio/School42-Piscina-agosto-2022). This function will be used mainly to change the base in functions that handle hexadecimal numbers and `unsigned int` type variables.
 
+## Requirements
+The library is written in __C language__ and needs the `gcc` compiler, with `<stdlib.h>` and `<unistd.h>` standard libraries to run.
+
+## Instructions
+
+### 1. Compiling the archives
+
+To compile the proiect, go to its path and run:
+
+For __mandatory__ functions:
+```
+$ make
+```
+### 2. Cleaning all binary (.o) and executable files (.a)
+
+To delete all files generated with make, go to the path and run:
+```
+$ make fclean
+```
+
+### 3. Using it in your code
+
+To use this project in your code, simply include this header:
+```
+#include "ft_printf.h"
+```
+
+## Testing
+This function have been tested with [Francinette](https://github.com/xicodomingues/francinette).
