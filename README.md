@@ -13,7 +13,7 @@ This repository contains all files for the __printf__ project from School 42 Má
 	<span> · </span>
 	<a href="#requirements">Requirements</a>
 	<span> · </span>
-	<a href="#instructions">Instuctions</a>
+	<a href="#instructions">Instructions</a>
 	<span> · </span>
 	<a href="#testing">Testing</a>
 </h2>
