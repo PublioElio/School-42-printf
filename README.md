@@ -67,7 +67,7 @@ The different types of variables are printed using a function for each of the fo
 [__`ft_aux_pf.c()`__](https://github.com/PublioElio/School-42-printf/blob/main/ft_aux_pf.c) this file contains all the auxiliary functions, specifically the `ft_atoi_base` function, [made during the August pool](https://github.com/PublioElio/School42-Piscina-agosto-2022). This function will be used mainly to change the base in functions that handle hexadecimal numbers and `unsigned int` type variables.
 
 ## Requirements
-The functions are written in __C language__ and need the `gcc` compiler, with `<stdlib.h>`, <stdarg.h>` and `<unistd.h>` standard libraries to run.
+The functions are written in __C language__ and need the `gcc` compiler, with `<stdlib.h>`, `<stdarg.h>` and `<unistd.h>` standard libraries to run.
 
 ## Instructions
 
